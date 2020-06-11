@@ -10,5 +10,6 @@ char F = 'a';
 
 for (F = 'a'; F <= 'z'; F++)
 putchar(F);
+putchar('\n');
 return (0);
 }
