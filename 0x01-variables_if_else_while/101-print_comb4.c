@@ -11,6 +11,8 @@ int m;
 
 for (n = '0'; n <= '9'; n++)
 {
+for (u = n + 1; u <= '9'; u++)
+{
 for (m = u + 1; m <= '9'; m++)
 {
 putchar(n);
