@@ -16,7 +16,7 @@ for (u = '0'; u <= '9'; u++)
 {
 for (m = n; m <= '9'; m++)
 {
-for (e = u + 1 ; e <= 57; e++)
+for (e = u + '1'; e <= 57; e++)
 {
 putchar(n);
 putchar(u);
