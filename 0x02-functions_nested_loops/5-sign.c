@@ -2,8 +2,8 @@
 
 /**
 * print_sign - check the code for Holberton School students.
-*
-* Return: Always 0.
+* @n: integer to test.
+* Return: 0..
 */
 int print_sign(int n)
 {
