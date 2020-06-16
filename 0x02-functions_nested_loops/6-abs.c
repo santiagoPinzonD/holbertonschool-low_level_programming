@@ -1,16 +1,16 @@
 #include "holberton.h"
-#include <math.h>
 
 /**
-* _abs - check the code for Holberton School students.
-*
-* Return: Always 0.
+* _abs - returns absolute value of a number
+* @r: the number to check
+* Return: absolute number
+* On zero 0.
 */
 
 int _abs(int r)
 {
- 	int y;
+	int y;
 
-	y = fabs(r);
+	y = abs(r);
 	return (y);
 }
