@@ -2,20 +2,19 @@
 
 /**
 * _abs - returns y value of a number
-* @r: the number to check
+* @n: the number to check
 * Return: y number
 * On zero 0.
 */
 
-int _abs(int r)
+int _abs(int n)
 {
-	
-	if (r >= 0)
+	if (n >= 0)
 {
-	return (r);
+	return (n);
 }
 	else
 {
-	return (r * -1);
+	return (n * -1);
 }
 }
