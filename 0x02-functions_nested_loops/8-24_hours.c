@@ -1,9 +1,10 @@
 #include "holberton.h"
 
 /**
-* print_last_digit - check the code for Holberton School students.
-* @r: the number check
-* Return: Always 0.
+* jack_bauer -prnts every minute of the day
+*
+* Return: none
+*
 */
 
 	void jack_bauer(void)
@@ -16,9 +17,9 @@
 
 	for (h = 0; h <= 2; h++)
 {
-	if( h == 2)
+	if (h == 2)
 	t = 3;
-	
+
 	for (m = 0; m <= t; m++)
 {
 	for (j = 0; j <= 5; j++)
