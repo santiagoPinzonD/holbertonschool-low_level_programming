@@ -10,7 +10,7 @@
 	int a;
 	int b;
 
-	for (b = 0; b <= 9; b++) 
+	for (b = 0; b <= 9; b++)
 {
 	for (a = 97; a <= 122; a++)
 {
