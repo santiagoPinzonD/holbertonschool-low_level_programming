@@ -13,7 +13,7 @@ int main(void)
 	for (a = 1; a < 101; a++)
 {
 	if (a % 3 == 0)
-	printf("fizz");
+	printf("Fizz");
 	if (a % 5 == 0)
 	printf("Buzz");
 	if (a % 3 != 0 && a % 5 != 0)
