@@ -9,7 +9,6 @@
 int main(void)
 {
 	int a;
-	int b;
 
 	for (a = 1; a <= 100; a++)
 {
