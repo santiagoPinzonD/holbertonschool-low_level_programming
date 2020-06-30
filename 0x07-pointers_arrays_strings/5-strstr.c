@@ -18,33 +18,26 @@ char *_strstr(char *haystack, char *needle)
 	{
 		return (haystack);
 	}
-	for (x = 0; needle[x] != '\0'; x++)
+	for (b = 0; haystack[b] != '\0'; b++)
 	{
-		for (b = 0; haystack[b] != '\0'; b++)
+		aux = b;
+
+		for (x = 0; needle[x] != '\0'; x++, aux++)
 		{
-			if (haystack[b] == needle[x])
+			if (haystack[aux] != needle[x])
 			{
-				aux = b;
-
-				for (; needle[x] != '\0'; x++, aux++)
-				{
-					if (haystack[aux] != needle[x])
-					{
-						aux1 = 0;
-						x = 0;
-						break;
-					}
-					else
-					{
-						aux1++;
-					}
-
-				}
+				aux1 = 0;
+				break;
 			}
-			if (needle[x] == '\0' && aux1 != 0)
+			else
 			{
-				return (haystack + b);
+				aux1++;
 			}
+
+		}
+		if (aux1 != 0)
+		{
+			return (haystack + b);
 		}
 	}
 	return ('\0');
