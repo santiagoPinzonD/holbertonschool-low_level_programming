@@ -1,11 +1,11 @@
 #include "holberton.h"
 
 /**
-* *_strstr - check the code for Holberton School students.
-* @haystack: esto es toda la cadena
-* @needle: esto es la comparaicion
-* Return: Always 0.
-*/
+ * *_strstr - check the code for Holberton School students.
+ * @haystack: esto es toda la cadena
+ * @needle: esto es la comparaicion
+ * Return: Always 0.
+ */
 
 char *_strstr(char *haystack, char *needle)
 {
@@ -27,10 +27,10 @@ char *_strstr(char *haystack, char *needle)
 						x = 0;
 						break;
 					}
-					else if (needle[x + 1] == '\0')
-					{
-						return (haystack + b);
-					}
+				}
+				if (needle[x] == '\0')
+				{
+					return (haystack + b);
 				}
 			}
 		}
