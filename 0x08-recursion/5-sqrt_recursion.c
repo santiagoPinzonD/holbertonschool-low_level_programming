@@ -15,6 +15,12 @@ int _sqrt_recursion(int n)
 	resultado = calculodelaraiz(n, x);
 	return (resultado);
 }
+/**
+* calculodelaraiz - check the code for Holberton School students.
+* @n: la raiz que entra
+* @x: iterator
+* Return: Always 0.
+*/
 
 int calculodelaraiz(int n, int x)
 {
