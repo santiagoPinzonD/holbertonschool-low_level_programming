@@ -1,5 +1,21 @@
 #include "holberton.h"
+/**
+* longi - check the code for Holberton School students.
+* @s: thi is a pointer
+* Return: void
+*/
 
+int longi(char *s)
+{
+	int size = 0;
+
+	if (*s == '\0')
+	{
+		return (0);
+	}
+
+	return (size + 1 + longi(s + 1));
+}
 /**
  * is_palindrome - check the code for Holberton School students.
  * @s: thi is a pointer
@@ -14,9 +30,8 @@ int is_palindrome(char *s)
 
 
 	/*condiciones iniciales */
+	x = longi(s);
 
-	for (x = 0; s[x] != '\0'; x++)
-		;
 	if (x == 1)
 	{
 		return (1);
