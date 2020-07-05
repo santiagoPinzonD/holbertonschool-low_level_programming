@@ -1,5 +1,4 @@
-#include <stdlib.h>
-#include <holberton.h>
+#include "holberton.h"
 
 /**
  * main - multiplies 2 numbers
