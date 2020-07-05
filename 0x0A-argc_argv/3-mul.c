@@ -1,13 +1,15 @@
-#include "holberton.h"
+#include <stdlib.h>
+#include <holberton.h>
 
 /**
-* main - esto es imprimir el argumento 0 que es el name
-* @argc: la cantidad de argumentos
-* @argv: el valor de cada argumento
-* Return: always 0
-*/
-
-int main(int argc __attribute__((unused)), char *argv[])
+ * main - multiplies 2 numbers
+ *
+ * @argc: cantidad de argumentos
+ * @argv: valor de cada argumento
+ *
+ * Return: 0
+ */
+int main(int argc, char *argv[])
 {
 	if (argc != 3)
 	{
