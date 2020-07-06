@@ -8,7 +8,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int x;
+	int x, b;
 	int suma;
 
 	suma = 0;
@@ -21,16 +21,21 @@ int main(int argc, char *argv[])
 
 	for (x = 1; x < argc; x++)
 	{
-		if (isdigit(*argv[x]) != 0)
+		for (b == 0; argv[x][b] != '\0'; b++)	
 		{
-			suma = suma  + atoi(argv[x]);
+			if (isdigit(argv[x][b]) != 0)
+			{
+				suma = suma  + atoi(argv[x]);
+			}
+
+			else
+			{
+				printf("Error\n");
+				return (1);
+			}
+
 		}
-		else
-		{
-			printf("Error\n");
-			return (1);
-		}
-	}
+	}	
 	printf("%d\n", suma);
 	return (0);
 }
