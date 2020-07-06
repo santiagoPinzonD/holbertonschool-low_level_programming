@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 
 	for (x = 1; x < argc; x++)
 	{
-		for (b == 0; argv[x][b] != '\0'; b++)	
+		for (b == 0; argv[x][b] != '\0'; b++)
 		{
 			if (isdigit(argv[x][b]) != 0)
 			{
@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
 			}
 
 		}
-	}	
+	}
 	printf("%d\n", suma);
 	return (0);
 }
