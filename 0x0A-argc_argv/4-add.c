@@ -21,20 +21,17 @@ int main(int argc, char *argv[])
 
 	for (x = 1; x < argc; x++)
 	{
-		for (b == 0; argv[x][b] != '\0'; b++)
+		for (b = 0; argv[x][b] != '\0'; b++)
 		{
-			if (isdigit(argv[x][b]) != 0)
+			if (isdigit(argv[x][b]) == 0)
 			{
-				suma = suma  + atoi(argv[x]);
-			}
 
-			else
-			{
 				printf("Error\n");
 				return (1);
 			}
 
 		}
+		suma = suma  +  atoi(argv[x]);
 	}
 	printf("%d\n", suma);
 	return (0);
