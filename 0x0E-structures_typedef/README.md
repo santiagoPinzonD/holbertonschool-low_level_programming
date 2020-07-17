@@ -1,1 +1,1 @@
-esto es struct and typedef
+esto es struct and typedef atenttion
