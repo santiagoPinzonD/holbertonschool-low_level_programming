@@ -26,7 +26,7 @@ void print_all(const char * const format, ...)
 	while (format[cf] != '\0')
 	{
 		ca = 0;
-		while (array[ca].argu != NULL)
+		while (ca < 4)
 		{
 			if (format[cf] == *array[ca].argu)
 			{
