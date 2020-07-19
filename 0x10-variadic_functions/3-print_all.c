@@ -80,8 +80,7 @@ void pstring(va_list charl)
 	s = va_arg(charl, char *);
 	if (s == NULL)
 	{
-		printf("(nil)");
-		return;
+		s = "(nil)";
 	}
 	printf("%s", s);
 }
