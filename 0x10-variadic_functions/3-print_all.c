@@ -33,6 +33,7 @@ void print_all(const char * const format, ...)
 				printf("%s", string);
 				array[ca].func(charl);
 				string = ", ";
+				break;
 			}
 			ca++;
 		}
