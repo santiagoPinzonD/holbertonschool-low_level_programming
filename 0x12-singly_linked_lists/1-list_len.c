@@ -1,4 +1,5 @@
 #include "lists.h"
+
 /**
  * list_len - check the code for Holberton School students.
  * @h: nodos.
@@ -6,14 +7,12 @@
  */
 size_t list_len(const list_t *h)
 {
-	int a;
-	int x;
+	unsigned int x;
 	const list_t *nodo = h;
 
 	for (x = 0; nodo != NULL; x++)
 	{
-		a += nodo->len;
 		nodo = nodo->next;
 	}
-	return (a - 10);
+	return (x);
 }
