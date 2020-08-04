@@ -23,15 +23,15 @@ ssize_t read_textfile(const char *filename, size_t letters)
 			return (0);
 		}
 		n_bytes = read(fd, buf, letters);
-		if (n_bytes == 0)
+		if (n_bytes < 0)
 			return (0);
 
 		n_bytes = write(STDOUT_FILENO, buf, n_bytes);
 
-		if (n_bytes == 0)
+		if (n_bytes < 0)
 			return (0);
-		free(buf);
 		close(fd);
+		free(buf);
 		return (n_bytes);
 	}
 	return (0);
