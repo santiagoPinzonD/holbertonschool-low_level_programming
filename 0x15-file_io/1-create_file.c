@@ -4,12 +4,11 @@
  * create_file - check the code for Holberton School students.
  * @filename: pointer to file
  * @text_content: contain the chars
- * Return: Always 0.
+ * Return: 1 if is correct, -1 in fall.
  */
 int create_file(const char *filename, char *text_content)
 {
-	int fd;
-	int x;
+	int fd, x;
 
 	if (filename)
 	{
